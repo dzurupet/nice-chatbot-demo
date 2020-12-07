@@ -19,7 +19,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>James Bot</title>
     <style>
       html,
       body,
@@ -53,12 +53,15 @@
   
       brandembassy('init', 6187, 'chat_82ee9c82-3c42-4ca6-b4c8-04fc4d36af99');
       brandembassy('sendFirstMessageAutomatically', false);
+      brandembassy('hideHeader');
       brandembassy('hidePopups');
-      brandembassy('setWindowWidth', '360px');
-      brandembassy('setWindowHeight', '600px');
-      brandembassy('setTranslation', 'replyBoxPlaceholder', 'Write a message');
-      brandembassy('setCustomCss', '[data-selector="REPLY_BOX"] textarea:disabled{color: #333; background-color: #fff}');  
-  
+      // brandembassy('setWindowWidth', '100%');
+      // randembassy('setWindowHeight', '100%');
+      // brandembassy('setOffsetX', '0'); 
+      // brandembassy('setOffsetY', '0');
+      brandembassy('setFullDisplay');
+      brandembassy('openChatWindow');
+      brandembassy('setStatusMessage', 'James Bot is available and replies instantly');
     </script>
   </body>
 </html>
