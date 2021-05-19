@@ -8,7 +8,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <img className="Img" src={chatbot} alt="" />
       </div>
     );
   }

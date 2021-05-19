@@ -19,7 +19,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>James Bot</title>
+    <title>Bot Builder - Live Chat</title>
     <style>
       html,
       body,
@@ -27,6 +27,9 @@
         position: relative;
         width: 100%;
         height: 100%;
+      }
+      #be-frame {
+        left: calc(50% - 200px) !important
       }
     </style>
   </head>
@@ -49,20 +52,17 @@
                     i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }; i[r].l = +new Date();
                     a = s.createElement(o); m = s.getElementsByTagName(o)[0]; a.async = 1;
                     a.src = g + '?' + Math.round(Date.now() / 1000 / 3600); m.parentNode.insertBefore(a, m)
-                    }) (window, document, 'script', 'brandembassy', 'https://livechat-static-qa.brandembassy.com/4/chat.js');
-  
-      brandembassy('init', 6249, 'chat_8f7bcd13-ac3f-4832-abb4-a3d30bbf6e08');
-      brandembassy('sendFirstMessageAutomatically', false);
-      brandembassy('hideHeader');
+                    }) (window, document, 'script', 'brandembassy', 'https://livechat-static.brandembassy.com/4/chat.js');
+      brandembassy('init', 7271, 'chat_2fdb86ed-e504-4538-b84c-1841fd09cb6f');
       brandembassy('hidePopups');
-      // brandembassy('setWindowWidth', '100%');
-      // randembassy('setWindowHeight', '100%');
-      // brandembassy('setOffsetX', '0'); 
-      // brandembassy('setOffsetY', '0');
-      brandembassy('setFullDisplay');
+      brandembassy('setWindowHeight', '60%');
+      brandembassy('setWindowWidth', '400px');
+      brandembassy('setPositionX', 'left');
+      brandembassy('setOffsetX', '200'); 
+      brandembassy('setOffsetY', '100');
       brandembassy('openChatWindow');
-      brandembassy('setStatusMessage', 'James Bot is available and replies instantly');
-      brandembassy('setCustomCss', '.link {display: inline}');
+      brandembassy('setStatusMessage', 'Our agents are available and replies instantly');
+      brandembassy('setCustomCss', '.link {display: inline} .be-icon-more {color: #fff} div[class^="ActionPanel_Close"] {display: none}');
 
     </script>
   </body>
